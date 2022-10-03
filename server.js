@@ -5,7 +5,7 @@ const mongodb = require("mongodb");
 const dotenv = require("dotenv").config();
 const mongoClient = mongodb.MongoClient;
 const URL = process.env.DB;
-const DB = "Mentor";
+const DB = "Newdb";
 
 //middleware
 app.use(express.json());
