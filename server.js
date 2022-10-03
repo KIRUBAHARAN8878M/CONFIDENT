@@ -7,9 +7,6 @@ const mongoClient = mongodb.MongoClient;
 const URL = process.env.URL;
 const DB = "Mentor";
 
-
-
-
 //middleware
 app.use(express.json());
 app.use(
