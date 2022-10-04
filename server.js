@@ -1,19 +1,14 @@
 const express = require("express");
-const cors = require("cors");
 const app = express();
 const mongodb = require("mongodb");
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 const mongoClient = mongodb.MongoClient;
 const URL = process.env.DB;
 const DB = "Newdb";
 
 //middleware
 app.use(express.json());
-app.use(
-  cors({
-    orgin: "http://localhost:3000",
-  })
-);
+
 
 app.get("/",function(req,res){
     res.send('<h1>Welcome Buddy!!!.</h1>');
